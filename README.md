@@ -28,6 +28,9 @@ Each search session is saved as a structured record containing:
 * AI Overview content
 * Result links
 
+<img width="797" height="594" alt="image" src="https://github.com/user-attachments/assets/1d9c93e2-8627-496c-a953-eedabd5a06a5" />
+
+
 ## How it works
 
 The extension uses:
