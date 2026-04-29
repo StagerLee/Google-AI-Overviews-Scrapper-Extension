@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Google AI Overview Logger",
+  "version": "1.0.0",
+  "description": "Saves Google searches, AI Overview text, and result links locally.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.google.com/search*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google AI Overview Logger"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
